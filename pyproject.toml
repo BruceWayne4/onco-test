@@ -1,0 +1,52 @@
+[project]
+name = "oncocontext"
+version = "0.1.0"
+description = "OncoContext MCP Server — Oncology literature deep search & lab data cross-reference"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+dependencies = [
+    "mcp>=1.0,<2.0",
+    "httpx>=0.27,<1.0",
+    "lxml>=5.0,<6.0",
+    "chromadb>=0.5,<1.0",
+    "onnxruntime>=1.17,<2.0",
+    "tokenizers>=0.19,<1.0",
+    "sentence-transformers>=3.0,<4.0",
+    "aiosqlite>=0.20,<1.0",
+    "diskcache>=5.6,<6.0",
+    "pandas>=2.0,<3.0",
+    "openpyxl>=3.1,<4.0",
+    "pydantic>=2.0,<3.0",
+    "pydantic-settings>=2.0,<3.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.5",
+    "mypy>=1.10",
+]
+
+[project.scripts]
+oncocontext = "oncocontext.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oncocontext"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (real network API calls, deselect with '-m \"not slow\"')",
+]
