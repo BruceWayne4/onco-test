@@ -5,7 +5,7 @@
       "args": ["-m", "oncocontext"],
       "cwd": "C:/Users/Akshay Gupta/Desktop/New folder/onco-test",
       "env": {
-        "NCBI_API_KEY": "72bc9c9f476018fb32875813755db0c7e508"
+        "NCBI_API_KEY": "ncbi-api-key"
       }
     }
   }
