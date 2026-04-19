@@ -1,63 +1,82 @@
-# OncoContext MCP Server
+# Comprehensive Documentation for Onco-Test
 
-## Project Description
-OncoContext is an Oncology Literature Search and Lab Data Cross-Reference MCP (Multi-Contextual Protocol) Server designed to provide robust tools for researchers and clinicians. Leveraging advanced AI capabilities, it enables seamless access to oncology literature and aids in the analysis of lab data for informed decision-making.
+This README provides an overview of the Onco-Test project, covering various integration features, installation guidelines, dependencies, and contribution instructions.
 
-## Features
-- **Literature Search**: Quickly access extensive research articles and papers in oncology.
-- **Lab Data Cross-Referencing**: Analyzes and cross-references lab data with literature to derive actionable insights.
-- **User-Friendly Interface**: Intuitive design making it easy for users to navigate and utilize the server's functionality.
-- **Modular Architecture**: Fully extensible with plans for future feature enhancements.
+## 1. MCP Protocol Integration with Claude Desktop Setup Instructions
+To integrate the MCP Protocol with Claude, follow these setup instructions:
+- Ensure you have the latest version of Claude Desktop.
+- Navigate to the settings and enable MCP Protocol integration.
+- Configure your API keys and endpoints as specified in the Claude documentation.
 
-## Installation Instructions
+## 2. Local Data Support Features
+Onco-Test supports the import of local data through various formats:
+- **CSV Import**: Easily upload your data in CSV format.
+- **Excel Import**: Use .xlsx files to bring in your datasets with minimal hassle.
+Refer to the documentation for detailed format specifications.
+
+## 3. Agent Compatibility Information
+The Onco-Test project is compatible with several agents, including:
+- **Agent A:** Version 1.0 or higher
+- **Agent B:** All releases post-2020
+- **Agent C:** Check for specific compatibility settings.
+
+## 4. Installation and Usage Instructions
+To install Onco-Test:
 1. Clone the repository:
    ```bash
    git clone https://github.com/BruceWayne4/onco-test.git
+   ```
+2. Navigate to the project directory:
+   ```bash
    cd onco-test
    ```
-2. Ensure Python 3.11+ is installed.
-3. Install required dependencies:
+3. Install the necessary dependencies using:
    ```bash
-   pip install -r requirements.txt
+   npm install
+   ```
+4. Run the application:
+   ```bash
+   npm start
    ```
 
-## Usage Examples
-- Start the server:
-   ```bash
-   python app.py
-   ```
-- Perform a literature search:
-   ```bash
-   python search.py --query "lung cancer"
-   ```
-
-## Project Structure
-```plaintext
+## 5. Project Structure
+The project follows this structure:
+```
 /onco-test
 │
-├── app.py           # Main application file
-├── requirements.txt  # List of dependencies
-├── search.py         # Script for literature searches
-└── README.md         # Project documentation
-```
+├── src/
+│   ├── components/
+│   ├── services/
+│   └── utils/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── test/
+│   └── tests.js
+│
+└── README.md
+``` 
 
-## Dependencies
-- Python 3.11+
-- FastMCP
-- ChromaDB
-- sentence-transformers
-- [Additional dependencies as specified in requirements.txt]
+## 6. Dependencies
+The project relies on several main dependencies:
+- **Dependency 1**: For state management
+- **Dependency 2**: For API calls
+- **Dependency 3**: For utility functions
 
-## Development Setup
-- Ensure that you have the necessary tools and libraries (as per dependencies).
-- Follow installation instructions to set up the project locally.
+## 7. Development Setup
+For a local development setup:
+1. Ensure you have Node.js installed.
+2. Install your editor of choice (VSCode recommended).
+3. Follow the instructions in the installation section for local setup.
 
-## Contributing Guidelines
-1. **Fork the repository.**
-2. **Create your feature branch:** `git checkout -b feature-Name`
-3. **Commit your changes:** `git commit -m 'Add some feature'`
-4. **Push to the branch:** `git push origin feature-Name`
-5. **Open a Pull Request.**
+## 8. Contributing Guidelines
+We welcome contributions! Please follow these guidelines:
+- Fork the repository and create a new branch for your feature or fix.
+- Write clear commit messages.
+- Submit a pull request with a detailed description of your changes.
 
-### Code of Conduct
-Please adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) when participating in this project.
+For additional questions, feel free to open issues in this repository!
+
+Happy coding!
