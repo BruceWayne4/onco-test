@@ -14,13 +14,8 @@ Onco-Test supports the import of local data through various formats:
 - **Excel Import**: Use .xlsx files to bring in your datasets with minimal hassle.
 Refer to the documentation for detailed format specifications.
 
-## 3. Agent Compatibility Information
-The Onco-Test project is compatible with several agents, including:
-- **Agent A:** Version 1.0 or higher
-- **Agent B:** All releases post-2020
-- **Agent C:** Check for specific compatibility settings.
 
-## 4. Installation and Usage Instructions
+## 3. Installation and Usage Instructions
 To install Onco-Test:
 1. Clone the repository:
    ```bash
@@ -39,7 +34,7 @@ To install Onco-Test:
    npm start
    ```
 
-## 5. Project Structure
+## 4. Project Structure
 The project follows this structure:
 ```
 /onco-test
@@ -59,19 +54,19 @@ The project follows this structure:
 └── README.md
 ``` 
 
-## 6. Dependencies
+## 5. Dependencies
 The project relies on several main dependencies:
 - **Dependency 1**: For state management
 - **Dependency 2**: For API calls
 - **Dependency 3**: For utility functions
 
-## 7. Development Setup
+## 6. Development Setup
 For a local development setup:
 1. Ensure you have Node.js installed.
 2. Install your editor of choice (VSCode recommended).
 3. Follow the instructions in the installation section for local setup.
 
-## 8. Contributing Guidelines
+## 7. Contributing Guidelines
 We welcome contributions! Please follow these guidelines:
 - Fork the repository and create a new branch for your feature or fix.
 - Write clear commit messages.
