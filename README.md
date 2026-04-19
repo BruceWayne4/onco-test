@@ -1,56 +1,63 @@
-# OncoContext
+# OncoContext MCP Server
 
-## Description
-OncoContext is an MCP Server designed for oncology literature deep search and lab data cross-reference. It aims to assist researchers and clinicians in navigating complex datasets, providing deep insights into oncology-related literature and lab findings.
+## Project Description
+OncoContext is an Oncology Literature Search and Lab Data Cross-Reference MCP (Multi-Contextual Protocol) Server designed to provide robust tools for researchers and clinicians. Leveraging advanced AI capabilities, it enables seamless access to oncology literature and aids in the analysis of lab data for informed decision-making.
 
 ## Features
-- Comprehensive search functionalities for oncology literature
-- Cross-referencing of lab data with relevant literature
-- User-friendly interface for efficient data retrieval
-- Supports various data formats and sources
+- **Literature Search**: Quickly access extensive research articles and papers in oncology.
+- **Lab Data Cross-Referencing**: Analyzes and cross-references lab data with literature to derive actionable insights.
+- **User-Friendly Interface**: Intuitive design making it easy for users to navigate and utilize the server's functionality.
+- **Modular Architecture**: Fully extensible with plans for future feature enhancements.
 
-## Installation
-To install OncoContext, follow these steps:
-1. Clone the repository: `git clone https://github.com/<your-repo-url>`
-2. Navigate into the project directory: `cd onco-context`
-3. Install dependencies: `npm install`
+## Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BruceWayne4/onco-test.git
+   cd onco-test
+   ```
+2. Ensure Python 3.11+ is installed.
+3. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Usage
-To run the OncoContext server, execute the following command:
-```bash
-npm start
-```
-Visit `http://localhost:3000` in your browser to access the application.
+## Usage Examples
+- Start the server:
+   ```bash
+   python app.py
+   ```
+- Perform a literature search:
+   ```bash
+   python search.py --query "lung cancer"
+   ```
 
 ## Project Structure
-```
-/onco-context  
-|-- src/  
-|   |-- models/  
-|   |-- controllers/  
-|   |-- routes/  
-|   |-- utils/  
-|-- tests/  
-|-- package.json
-|-- README.md
+```plaintext
+/onco-test
+│
+├── app.py           # Main application file
+├── requirements.txt  # List of dependencies
+├── search.py         # Script for literature searches
+└── README.md         # Project documentation
 ```
 
 ## Dependencies
-- Express
-- Mongoose
-- Axios
-- Dotenv
+- Python 3.11+
+- FastMCP
+- ChromaDB
+- sentence-transformers
+- [Additional dependencies as specified in requirements.txt]
 
 ## Development Setup
-To set up a development environment, follow these steps:
-1. Ensure Node.js and npm are installed.
-2. Follow the installation steps above.
-3. To run tests, execute: `npm test`
+- Ensure that you have the necessary tools and libraries (as per dependencies).
+- Follow installation instructions to set up the project locally.
 
-## Contributing
-Contributions are welcome! Please follow these guidelines when contributing:
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix: `git checkout -b feature/my-feature`.
-3. Commit your changes: `git commit -m 'Add some feature'`.
-4. Push to the branch: `git push origin feature/my-feature`.
-5. Open a pull request.
+## Contributing Guidelines
+1. **Fork the repository.**
+2. **Create your feature branch:** `git checkout -b feature-Name`
+3. **Commit your changes:** `git commit -m 'Add some feature'`
+4. **Push to the branch:** `git push origin feature-Name`
+5. **Open a Pull Request.**
+
+### Code of Conduct
+Please adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) when participating in this project.
